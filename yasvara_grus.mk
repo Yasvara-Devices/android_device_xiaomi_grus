@@ -12,13 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Include all languages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit LineageOS common configuration.
+# Inherit Yasvara (LineageOS based) common configuration.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from grus device
 $(call inherit-product, device/xiaomi/grus/device.mk)
 
-PRODUCT_NAME := lineage_grus
+PRODUCT_NAME := yasvara_grus
 PRODUCT_DEVICE := grus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
